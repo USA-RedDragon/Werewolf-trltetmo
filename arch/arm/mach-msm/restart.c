@@ -378,6 +378,7 @@ static int dload_mode_normal_reboot_handler(struct notifier_block *nb,
 static struct notifier_block dload_reboot_block = {
 	.notifier_call = dload_mode_normal_reboot_handler
 };
+#endif
 
 #ifdef CONFIG_KEXEC_HARDBOOT
 static void msm_kexec_hardboot_hook(void)
